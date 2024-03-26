@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: #0b0b0b;
+            color: white;
+            border: none;
+            line-height: 2ch;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #1f1f1f;
+        }
+        .needHelp{
+            position: relative;
+            color: blue;
+            top: 1ch;
+            padding-left: 18ch;
+            text-decoration-line: none;
+        }
+        .needHelp:hover{
+            color: red;
+            text-decoration-line: none;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Forgot Password</h2>
+        <form>
+            <label for="type">EMAIL:</label><br><br>
+            <input type="text" placeholder="Email:" name="email" required>
+            <label for="type">We'll send an SMS verification code</label><br><br>
+            <a href="./otp.html"><input type="submit" value="SUBMIT"></a>
+            <a href="#"><label for="type" class="needHelp">Need Help?</label></a>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="flux.js"></script>
+</head>
+<body>
+    
+    <div body-container>
+        <div class="hero">
+            <header class="header">
+                <nav class="navigation">
+                    <a class="active " href="./index.html">Home</a>
+                    <a class="active" href="./AboutUs.html">About Us</a>
+                    <a class="active" href="./Contestant.html">Contestants</a>
+                    <a class="active activated" href="./Contact.html">Contact Us</a>
+                    <a class="active" href="./logins.html">Login</a>
+                    <a class="active" href="./register.html">Registeration</a>
+                </nav>
+                <hr><br>
+                <nav>
+                    <a class="btn1" href="#">FAQ</a>
+                    <a href="" class="sub-nav">beflux123@gmail.com</a>
+                    <a href="#" class="sub-nav">+234 (814) 1614-755</a>
+                </nav>
+            </header>
+
+
+
+            <!-- <div>
+            </div> -->
+            
+            
+            <!-- /* hero-sec*/ -->
+            
+            
+            <!-- section 2 -->
+            
+            <div sect-2 style="background: whitesmoke; width: 100%;height: 52.4ch;">
+                
+                <div>
+                    <img class="sec-2-pic" src="./pictures/contact.jpg">
+                    <img src="./pictures/log2.png" class="logo">
+            </div>
+
+            <div class="sect-2-bord">
+                <p style="color: black;">Feel Free To Rech Us Using The Details Below</p><br>
+                <hr style="background-color: black;height: 4px;width: 50ch;"><br>
+                <img src="./pictures/13.webp"> <a href="#">info@beautyflux.com</a><br>
+                <img src="./pictures/13.webp"> <a href="#">support@beautyflux.com</a><br>
+                <img src="./pictures/call.png"> <a href="#">+2348141614755</a><br>
+                <img src="./pictures/search icon.png"style="width:4ch;"> <a href="#"> 7033 Cottage Road Off Okoloma Afam, Oyigbo Rivers State </a>
+            </div>
+        </div>
+
+
+        <!-- section 3 -->
+
+
+        <div class="sect-3-bord">
+
+            <div class="sect-div">
+                <h4>LET'S TALK </h4>
+                <h2>Get In Touch</h2>
+                <input type="text"placeholder="Your Name"></input>
+                <input type="email"placeholder="Your Email"></input><br><br>
+                <input type="number"placeholder="Your Phone Number"></input>
+                <input type="text"placeholder="Your Website URL"></input><br><br>
+                <textarea class="textarea" type="textarea"placeholder="Your Message Here"></textarea>
+            </div>
+
+
+            <div class="group-1">
+                <input id="check" type="checkbox" class="check">
+                <label for="check"><span class="icon"></span> i've read and agree to the Privacy Policy</label>
+            </div>
+            <div class="group-2">
+                <a href="./flux.html"><input type="submit" class="button" value="SEND"></a>
+            </div>
+
+        </div>
+
+        
+        <!-- section 4 -->
+
+        <div class="Mapping">
+            <h1>My Google Map</h1>
+            <div id="map"></div>>
+        </div>
+
+        
+
+          <!-- footer section -->
+
+        <div class="footer-body">
+            <div class="footer-link" style="display: flex;flex-direction: column; ">
+                <a href="./index.html">Home</a>
+                <a href="./AboutUs.html">About Us</a>
+                <a href="./Contestant.html">Contestants</a>
+                <a href="./Contact.html">Contact</a>
+                <a href="./logins.html">Login</a>
+                <a href="./register.html">Registeration</a>
+            </div>
+
+
+            <div>
+                <img class="footer-logo" src="./pictures/white logo.png">
+            </div>
+
+            <div class="sect-2-bord-2">
+                <p style="color: black;">Feel Free To Rech Us Using The Details Below</p><br>
+                <hr style="background-color: black;height: 4px;width: 50ch;"><br>
+                <img src="./pictures/13.webp"> <a href="#">info@beautyflux.com</a><br>
+                <img src="./pictures/13.webp"> <a href="#">support@beautyflux.com</a><br>
+                <img src="./pictures/call.png"> <a href="#">+2348141614755</a><br>
+                <img src="./pictures/search icon.png"style="width:4ch;"> <a href="#"> 7033 Cottage Road Off Okoloma Afam, Oyigbo Rivers State </a>
+            </div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+            <div class="footer-cover-6">
+                <hr class="footer-line">
+                <div>
+                    <a href="#">
+                        <h5>
+                            2024 © 2025. Beauty Flux. All rights reserved.
+                        </h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+     </div>
+        
+
+     <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -25.363, lng: 131.044 }, // Coordinates for Uluru, Australia
+                zoom: 8
+            });
+
+            var marker = new google.maps.Marker({
+                position: { lat: -25.363, lng: 131.044 },
+                map: map,
+                title: 'Uluru (Ayers Rock)'
+            });
+
+            var infoWindow = new google.maps.InfoWindow({
+                content: 'Uluru, also known as Ayers Rock'
+            });
+
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
+
+            var searchBox = new google.maps.places.SearchBox(document.getElementById('search-box'));
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(document.getElementById('search-box'));
+
+            map.addListener('bounds_changed', function() {
+                searchBox.setBounds(map.getBounds());
+            });
+
+            var markers = [];
+            searchBox.addListener('places_changed', function() {
+                var places = searchBox.getPlaces();
+
+                if (places.length == 0) {
+                    return;
+                }
+
+                markers.forEach(function(marker) {
+                    marker.setMap(null);
+                });
+                markers = [];
+
+                var bounds = new google.maps.LatLngBounds();
+                places.forEach(function(place) {
+                    if (!place.geometry) {
+                        console.log("Returned place contains no geometry");
+                        return;
+                    }
+                    var icon = {
+                        url: place.icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    markers.push(new google.maps.Marker({
+                        map: map,
+                        icon: icon,
+                        title: place.name,
+                        position: place.geometry.location
+                    }));
+
+                    if (place.geometry.viewport) {
+                        bounds.union(place.geometry.viewport);
+                    } else {
+                        bounds.extend(place.geometry.location);
+                    }
+                });
+                map.fitBounds(bounds);
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGQ8uGgH2yxz-0bZmLi2N7XiK1c67qNrI&callback=initMap"></script>
+    <input id="search-box" type="text" placeholder="Search Box">
+</body>
+<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+        <script>
+          var wa_btnSetting = {"btnColor":"#0ced4c","ctaText":"WhatsApp Gracia","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"+2348141614755","welcomeMessage":"Hello Gracia","zIndex":999999,"btnColorScheme":"light"};
+          window.onload = () => {
+            _waEmbed(wa_btnSetting);
+          };
+        </script>
+</html>

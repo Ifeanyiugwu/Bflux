@@ -1,0 +1,367 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: sans-serif;
+    transition: background-color .5s;
+}
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+  
+  .nav-link{  
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    color: White;
+    font-family: Arial;
+    letter-spacing: 2px;
+  }
+  .nav-link:hover{
+    border-bottom: 2px solid var(--lightGreen);
+  }
+  .header {
+    position: relative;
+    background-color: white;
+    padding-top: 8ch;
+    padding-bottom: 3ch;
+    /* Border-image: fill 0 linear-gradient(#0003, #000); */
+  }
+  .header-guide {
+    position: absolute;
+    top: 10ch;
+    width: 100%;
+    background-color: #06355c;
+  }
+  .header-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: green;
+  }
+  .navigation {
+    position: absolute;
+    top: 10ch;
+    left: 1ch;
+    padding-bottom: 16ch;
+    /* position: fixed; */
+  }
+  .navigation a {
+    margin-left: 3ch;
+    text-decoration-line: none;
+    top: 16ch;
+    color: black;
+    /* word-spacing: -2px; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:normal;
+  
+  }
+  .navigation a.activated {
+    color: white;
+    padding-left: 1ch;
+    background-color: black;
+    padding-right: 1ch;
+    /* border-radius: 3ch; */
+  }
+  .navigation a:hover {
+    color: rgb(166, 70, 70);
+  }
+  .btn1 {
+    position:relative;
+    color: black;
+    background-color: white;
+    text-decoration-line: none;
+    padding-left: 8ch;
+    padding-right: 8ch;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    left: 120ch;
+    top: -7ch;
+    border: 1px solid rgb(166, 70, 70);;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .btn1:hover {
+    background-color: black;
+    color: white ;
+  }
+  .sub-nav {
+    position:relative;
+    margin-left: 3ch;
+    color: #06355c;
+    background-color: white;
+    text-decoration-line: none;
+    left: 47ch;
+    top: -7ch;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .sub-nav:hover{
+    color: rgb(166, 70, 70);;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.logo{
+    position: relative;
+    top: -83.8ch;
+    width: 22ch;
+    height: 13ch;
+    /* background-color: red; */
+}         
+/* section 2 */
+
+.covers-border {
+    position: absolute;
+    width: 90%;
+    height: 80ch;
+    background-color: white;
+    left: 9ch;
+    border-radius: 2ch;
+    /* padding-right: 30ch;
+    padding-left: 80ch; */
+    top:97ch;
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+.covers-border h3 {
+    position: absolute;
+    top: 10ch;
+    font-family: monospace;
+    left: 10ch;
+    font-size: larger;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+.covers-border p {
+    position: absolute;
+    top: 15ch;
+    font-family: 'Times New Roman', Times, serif;
+    left: 8ch;
+    font-size: large;
+    line-height: 4ch;
+    font-style: italic;
+}
+.covers-border h5 {
+    position: absolute;
+    top: 90ch;
+    left: 15ch;
+    color: black;
+    text-decoration-line: none;
+}
+.covers-border h5:hover{
+    color: red;
+}
+.covers-border-text  {
+position: absolute;
+left: 8ch;
+top: 48ch;
+width: 35ch;
+}
+.covers-border-text h4 {
+position: absolute;
+font-size: 20px;
+top: 16ch;
+left: 13ch;
+}
+.signature {
+    position: absolute;
+    top: 18ch;
+    left: 3ch;
+}
+.covers-border-text p {
+    position: absolute;
+    top: 22ch;
+    left: 18ch;
+}
+.mySlides {
+    position: absolute;
+    top: 5ch;
+    width: 40%;
+    right: 6ch;
+    height: 70%;
+    border-radius: 2ch;
+}
+.w3-display-right {
+    position: absolute;
+    right: 3ch;
+    top: 30ch;
+}
+.w3-display-left {
+    position: absolute;
+    left: 87ch;
+    top: 30ch;
+}
+/* section 4 */
+
+/*  */
+
+.fourth-border{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 180ch;
+/* background-color: ; */
+width: 100%;
+font-family: 'Trebuchet MS';
+height: 98ch;
+/* background-color: rgb(235, 78, 78); */
+text-decoration-line: none;
+background-image: url(./pictures/Contex.JPG);
+background-attachment: fixed;
+box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+.fourth-border-cover-0{
+   position: absolute;
+   top: 195ch;
+    left: 5ch;
+    width: 45%;
+    height: 40%;
+    border-radius: 2ch;
+    background-color: black;
+}
+.fourth-border h3{
+    color: white;
+    font-family: Cambria,;
+    font-size: 3ch;
+    margin-left: 12ch;
+    margin-top: 2ch;
+}
+.fourth-border p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2ch;
+    margin-left: 2ch;
+    width: 90%;
+    margin-top: 5ch;
+    line-height: -4ch;
+
+}
+.fourth-border-cover-1{
+   position: absolute;
+   top: 233ch;
+    right: 5ch;
+    width: 45%;
+    height: 40%;
+    border-radius: 2ch;
+    background-color: black;
+}
+.fourth-border-cover-2{
+   position: absolute;
+   top: 272ch;
+    left: 5ch;
+    width: 45%;
+    height: 40%;
+    border-radius: 2ch;
+    background-color: black;
+}
+.fourth-border-cover-3{
+    position: absolute;
+    top: 306ch;
+     right: 5ch;
+     width: 45%;
+     height: 40%;
+     border-radius: 2ch;
+     background-color: black;
+ }
+.fourth-border-cover-4{
+    position: absolute;
+    top: 365ch;
+    left: 5ch;
+     width: 95%;
+     height: 20%;
+     border-radius: 2ch;
+     background-color: black;
+ }
+
+/* section 5 */
+
+.footer-body {
+    position: absolute;
+    top: 395ch;
+    width: 100%;
+    height: 40ch;
+    background-color:black;
+    }
+.footer-cover-6{
+    margin-top: 2ch;
+        width: 100%;
+        /* height: 10ch; */
+    }
+    .footer-line{
+        width: 100%;
+        background-color: white;
+    }
+    .footer-cover-6 a {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 50ch;
+        margin-top: 3ch;
+        word-spacing: 4px;
+        text-decoration-line: none;
+    }
+    .footer-logo{
+        display:flex;
+        flex-direction:column;
+        margin-left: 110ch;
+        width: 17%;
+        height: 17%;
+        margin-top: -27ch;
+        /* background-color: black; */
+        
+    }
+    .footer-link a{
+        display: flex;
+        flex-direction: row;
+        color: rgb(255, 255, 255);
+        line-height: 3;
+        margin-left: 80ch;
+    }
+    .footer-link a:hover{
+        color: rgb(255, 0, 0);
+    }
+    .sect-2-bord{
+        position: absolute;
+        left: 12ch;
+        /* background-color: whitesmoke; */
+        height: 30ch;
+        width: 60ch;
+        top: 2ch;
+    
+      }
+      .sect-2-bord a{
+        line-height: 5ch;
+        text-decoration-line: none;
+        color: white;
+      }
+      .sect-2-bord a:hover{
+        color: red;
+      }
+    
+     /* top */
+    #myBtn {
+        display: ; /* Hidden by default */
+        position: absolute; /* Fixed/sticky position */
+        bottom: 8ch; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; Make sure it does not overlap;
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #444; /* Set a background color */
+        color: black; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      
+      #myBtn:hover {
+        background-color: white;
+        color: red; /* Add a dark-grey background on hover */
+      }
+    
+
+

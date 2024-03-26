@@ -1,0 +1,495 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: sans-serif;
+    transition: background-color .5s;
+}
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+  
+  .nav-link{  
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    color: White;
+    font-family: Arial;
+    letter-spacing: 2px;
+  }
+  .nav-link:hover{
+    border-bottom: 2px solid var(--lightGreen);
+  }
+  .header {
+    position: relative;
+    background-color: white;
+    padding-top: 8ch;
+    padding-bottom: 3ch;
+    /* Border-image: fill 0 linear-gradient(#0003, #000); */
+  }
+  .header-guide {
+    position: absolute;
+    top: 10ch;
+    width: 100%;
+    background-color: #06355c;
+  }
+  .header-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: green;
+  }
+  .navigation {
+    position: absolute;
+    top: 10ch;
+    left: 1ch;
+    padding-bottom: 16ch;
+    /* position: fixed; */
+  }
+  .navigation a {
+    margin-left: 3ch;
+    text-decoration-line: none;
+    top: 16ch;
+    color: black;
+    /* word-spacing: -2px; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:normal;
+  
+  }
+  .navigation a.activated {
+    color: white;
+    padding-left: 1ch;
+    background-color: black;
+    padding-right: 1ch;
+    /* border-radius: 3ch; */
+  }
+  .navigation a:hover {
+    color: rgb(166, 70, 70);
+  }
+  .btn1 {
+    position:relative;
+    color: black;
+    background-color: white;
+    text-decoration-line: none;
+    padding-left: 8ch;
+    padding-right: 8ch;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    left: 120ch;
+    top: -7ch;
+    border: 1px solid rgb(166, 70, 70);;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .btn1:hover {
+    background-color: black;
+    color: white ;
+  }
+  .sub-nav {
+    position:relative;
+    margin-left: 3ch;
+    color: #06355c;
+    background-color: white;
+    text-decoration-line: none;
+    left: 47ch;
+    top: -7ch;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .sub-nav:hover{
+    color: rgb(166, 70, 70);;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.logo{
+    position: relative;
+    top: -73ch;
+    width: 22ch;
+    height: 13ch;
+    /* background-color: red; */
+}
+.button-1,.button-2 {
+    background-color: white; color: black; padding: 3ch 7ch 3ch 7ch;border: none;margin: 2ch; font-style: italic;font-family: Cambria;opacity: 0.5;
+}
+.button-1:hover{
+    background-color: rgb(38, 37, 37);
+    color: white;
+
+}
+.button-2:hover{
+    background-color: rgb(38, 37, 37);
+    color: white;
+
+}
+
+                                                      /* section 2 */ 
+
+
+.contestant{
+    position: absolute;
+    left: 19ch;
+    top: 26.5ch;
+    color: black;
+    font-family:Cambria;
+    font-size: 5ch;
+    width: 20ch;
+}
+
+.box-border {
+    margin-top: 3ch;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* background-color: white; */
+    /* box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1); */
+}
+
+.box{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    /* background: rgb(44, 43, 43); */
+    /* transition: .5s; */
+}
+
+.box .imgBx{
+display: flex;
+flex-direction: row;
+    width: 80%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: black;
+    /* border-radius: 3ch; */
+}
+.box .content {
+    position: absolute;
+    bottom: 10px;
+    top: 33ch;
+    left: 28px;
+    width: 26ch;
+    right: 10px;
+    height: 20ch;
+    display: flex;
+    /* background-color: rgb(0, 0, 0); */
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /* transition: .2s; */
+    /* box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1); */
+}
+.box h2{
+    color: black;
+    font-family: cursive;
+    /* transition: .2s; */
+    font-family: cursive;
+    text-transform:uppercase;
+    font-size: small;
+
+}
+
+.box:before.box:after{
+    position: absolute;
+    top: 9ch;
+background: linear-gradient(225deg, #131313,);
+}
+
+
+/* section 2/1 */
+
+.box-border-1{
+    margin-top: 20ch;
+    display: flex;
+    width: 100%;
+    height: 54ch;
+    flex-direction: row;
+    /* background-color: gray; */
+    /* box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1); */
+}
+/* section 2/2 */
+
+.box-borders-2{
+    margin-top: 9ch;
+    display: flex;
+    width: 100%;
+    height: 54ch;
+    flex-direction: row;
+    /* background-color: gray; */
+    /* box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1); */
+}
+.box-borderss-2 {
+    margin-top: 9ch;
+    display: flex;
+    width: 100%;
+    height: 54ch;
+    flex-direction: row;
+    /* background-color: gray; */
+    /* box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1); */
+}
+
+/* section 3*/
+
+.content h3{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2ch;
+}
+.box-borderssss-2 {
+    margin-top: -3ch;
+    display: flex;
+    width: 100%;
+    height: 54ch;
+    flex-direction: row;
+    /* background-color: gray; */
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+.box-2{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    left: 13.5ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    /* background: black; */
+    /* transition: .5s; */
+}
+.box-2 .imgBx{
+display: flex;
+flex-direction: row;
+    width: 50%;
+    height: 80%;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 3ch;
+}
+.box-2 .content {
+    position: absolute;
+    bottom: 10px;
+    top: 280px;
+    left: 9ch;
+    right: 10px;
+    height: 20ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: .2s; */
+}
+
+/* section 3/3 */
+
+.box-bordersrr-2 {
+    margin-top: -5ch;
+    display: flex;
+    width: 100%;
+    height: 54ch;
+    flex-direction: row;
+    /* background-color: gray; */
+    /* box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1); */
+}
+ 
+
+
+/* judges */
+
+
+    .judges{
+        position: absolute;
+        padding-left:16ch;
+        padding-top: 1ch;
+        width: 39ch;
+        left: 3ch;
+        line-height: 6ch;
+        color:black;
+        margin: 1ch;
+        font-size: 5ch;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .judge{
+        position: relative;
+        top: 30ch;
+        right: 15ch;
+        width: 250px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px;
+        /* background: rgb(44, 43, 43); */
+    }
+    .judge .imgBx{
+    display: flex;
+    flex-direction: row;
+        width: 70%;
+        height: 120%;
+        box-sizing: border-box;
+        /* background-color: black; */
+        border-radius: 3ch;
+    }
+    .judge .content {
+        position: absolute;
+        bottom: 10px;
+        top: 30px;
+        left: 29.6ch;
+        right: 10px;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+    }
+    .judge h2{
+        color: white;
+        font-family: cursive;
+        /* transition: .2s; */
+        font-family: cursive;
+        text-transform:uppercase;
+        font-size: small;
+    
+    }
+
+/* counter card */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 23%;
+    height: 15ch;
+    padding: 0 20px;
+  }
+  
+  .row {
+    padding-left: 10ch;
+    margin: 10 15px;
+    margin-top: -75ch;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 1px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+  }
+  
+  .card:hover{
+    background-color: black;
+  }
+  .fa {font-size:50px;}
+
+    /* footer-section */
+
+.footer-body {
+    position: absolute;
+    top:620ch;
+    width: 100%;
+    height: 40ch;
+    background-color:rgb(0, 0, 0);
+    }
+.footer-cover-6{
+    margin-top: 2ch;
+        width: 100%;
+        /* height: 10ch; */
+    }
+    .footer-line{
+        margin-top: 62ch;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    .footer-cover-6 a {
+        display: flex;
+        flex-direction: row;
+        color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left: 50ch;
+        margin-top: 3ch;
+        word-spacing: 4px;
+        text-decoration-line: none;
+    }
+    .footer-logo{
+        display:flex;
+        flex-direction:column;
+        margin-left: 110ch;
+        width: 17%;
+        height: 17%;
+        margin-top: -27ch;
+        /* background-color: black; */
+        
+    }
+    .footer-link a{
+        display: flex;
+        flex-direction: row;
+        color: rgb(255, 255, 255);
+        line-height: 3;
+        margin-left: 80ch;
+    }
+    .footer-link a:hover{
+        color: rgb(255, 0, 0);
+    }
+    .sect-2-bord{
+        position: absolute;
+        left: 12ch;
+        /* background-color: whitesmoke; */
+        height: 30ch;
+        width: 60ch;
+        top: 2ch;
+    
+      }
+      .sect-2-bord a{
+        line-height: 5ch;
+        text-decoration-line: none;
+        color: white;
+      }
+      .sect-2-bord a:hover{
+        color: red;
+      }
+
+    /* top */
+    #myBtn {
+        display: ; 
+        position: absolute; 
+        bottom: 8ch; 
+        right: 30px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-color: gray; 
+        color: black; 
+        cursor: pointer; 
+        padding: 15px; 
+        border-radius: 10px; 
+        font-size: 18px; 
+      }
+      
+      #myBtn:hover {
+        background-color: white;
+        color: red; 
+      }
