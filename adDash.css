@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: sans-serif;
+    /* transition: background-color .5s; */
+    /* overflow: hidden; */
+}
+colgroup{
+    background-color: #688db1;
+    background-color: #011222;
+    background-color: #192a56;
+    background-color: #fffcf3;
+    background-color: #6d4d38;
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+#container-field{
+    width: 100%;
+    height: 76.8ch;
+    background-color: #fffcf3;
+    border-top-left-radius: 1ch;
+    border-bottom-left-radius: 1ch;
+}
+.side-bar{
+    background-color: #192a56;
+    /* background-color: #0c0c0c; */
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+
+    width: 14%;
+    border-top-left-radius: 1ch;
+    border-bottom-left-radius:1ch ;
+    height: 76.8ch;
+}
+.Dashb{
+    color: white;
+    padding-left: 4ch;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.side-bar a {
+    padding-left: 1ch;
+    display: flex;
+    flex-direction: row;
+    margin: 5ch;
+    color: white;
+    text-decoration-line: none;
+}
+.side-bar a:hover{
+    /* background-color: white; */
+    color: red;
+
+}
+.side-bar img{
+    padding-left: 1ch;
+}
+
+/* section 2 */
+
+.sect-2-div{
+    position: absolute;
+    top: 1ch;
+    left: 23ch;
+    background-color: #192a56;    border-radius: 1ch;
+    width: 83%;
+    height: 20ch;
+}
+.sect-2-div h3{
+    color: white;
+    position: relative;
+    top: 1.5ch;
+    left: 2ch;
+}
+.sect-2-div img{
+    width: 5ch;
+    height: 5ch;
+    top: -2ch;
+    position: relative;
+    left: 53ch;
+}
+.side-images{
+    /* position: relative; */
+    top: -2ch;
+    border-radius: 50%;
+}
+.log-div{
+    position: relative;
+    left: 105ch;
+    /* background-color: red; */
+    width: 15ch;
+    top: -6.3ch;
+    color: white;
+}
+.select-2{
+    position: relative;
+    left: 6ch;
+    top: -3ch;
+    width: 10ch;
+    padding: 3ch 2ch 3ch 2ch;
+    border-radius: 2ch;
+}
+.button-log{
+position: relative;
+top:-2.5ch;
+background-color: rgb(219, 20, 20);
+border: none;
+left: 62ch;
+}
+
+
+                                   /* section 3 */
+

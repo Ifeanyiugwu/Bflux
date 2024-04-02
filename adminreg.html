@@ -84,6 +84,14 @@
         width: 70%;
     }
 
+    .reg{
+        background-image: url(./pictures/cover_v3.webp  );
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
     @media screen and (max-width: 600px) {
         .container {
             margin: 10px;
@@ -105,7 +113,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Registration</h1>
+        <h1 class="reg">Registration</h1>
         <form>
             <div class="form-group">
                 <label for="firstName">First Name:</label>
@@ -156,7 +164,7 @@
                 <label for="confirmPassword">Confirm Password:</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
             </div>
-            <button id="register" onclick="getStarted(event)">Register</button>
+            <button id="register" onclick="adminRegister(event)">Register</button>
         </form>
     </div>
 <script src="./src/utils.js"></script>

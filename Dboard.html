@@ -16,13 +16,13 @@
             <!-- <input type="image"> -->
             <hr>
             <a href="./index.html">Dashboard</a>
-            <a href="#">Appointments </a>
             <a href="#">Clients</a>
             <a href="./Contestant.html">Contestants</a>
             <a href="#">Messages</a>
-            <a href="#">Reviews</a>
             <a href="#">Users</a>
             <a href="#">Settings</a>
+            <button  onclick="logout()"  class="select-2">Logout</button>
+
         </div>
 
         <!-- section 2 -->
@@ -39,8 +39,7 @@
             <div class="log-div">
                 <h4 id="profileName"><b></b></h4>
                 <h6 id="profileSubName"></h6>
-                <a href="./index.html"><button class="select-2">Logout</button></a>
-            </div>
+                </div>
         </div>
 
         <!-- section 3 -->
@@ -287,6 +286,7 @@
     <script src="./src/API/Bflux.js"></script>
     <script src="./src/routes.js"></script>
 
+    
 </body>
 <script>
 // var myIndex = 0;
@@ -305,7 +305,7 @@
 // }
 
 // dashboard script
-
+verifyUser()
 user = Dboard();
 const profileName = document.querySelector("#profileName");
 const profileSubName = document.getElementById("profileSubName");

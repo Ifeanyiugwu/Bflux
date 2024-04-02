@@ -81,7 +81,7 @@ colgroup{
     height: 5ch;
     top: -2ch;
     position: relative;
-    left: 53ch;
+    left: 37ch;
 }
 .side-images{
     /* position: relative; */
@@ -90,26 +90,34 @@ colgroup{
 }
 .log-div{
     position: relative;
-    left: 105ch;
+    left: 100ch;
     /* background-color: red; */
     width: 15ch;
-    top: -6.3ch;
+    top: -6ch;
     color: white;
 }
 .select-2{
     position: relative;
-    left: 10ch;
+    left: 6ch;
     top: -3ch;
+    width: 10ch;
+    padding: 3ch 2ch 3ch 2ch;
+    border-radius: 2ch;
 }
 .button-log{
 position: relative;
-top:-2.5ch;
-background-color: white;
+top:-4ch;
+/* background-color: rgb(236, 49, 49); */
 border: none;
 left: 62ch;
+/* border-radius: 50%; */
 }
-
-
+.sect-2-div a{
+    position: relative;
+    left: 22.5ch;
+color: black;
+background-color: white;
+}
                                    /* section 3 */
 
 .cover{

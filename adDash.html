@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./adDash.css">
+</head>
+
+<body>
+    <div id="container-field">
+        <div class="side-bar">
+            <br>
+            <h2 class="Dashb">Bflux</h2><br>
+            <hr>
+            <a href="./index.html">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Messages</a>
+            <a href="#">Reviews</a>
+            <a href="#">Users</a>
+            <a href="#">Settings</a>
+            <button  onclick="logout()" id="logout"class="select-2">Logout</button>
+
+        </div>
+
+        <!-- section 2 -->
+
+        <div class="sect-2-div">
+            <h3>Overview</h3>
+            <input class="button-log" type="file"onchange="selectImage(this)" accept="image/">
+            <a href="#" onclick="update()">Update Profile</a>
+            <img class="side-images" src="./pictures/Judge8.jpeg" id="profile">
+            <div class="log-div">
+                <h4 id="profileName"><b></b></h4>
+                <h6 id="profileSubName"></h6>
+                </div>
+        </div>
+
+        <!-- section 3 -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./src/utils.js"></script>
+    <script src="./src/API/Bflux.js"></script>
+    <script src="./src/routes.js"></script>
+
+</body>
+<script>
+// var myIndex = 0;
+// carousel();
+
+// function carousel() {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";
+//     }
+//     myIndex++;
+//     if (myIndex > x.length) { myIndex = 1 }
+//     x[myIndex - 1].style.display = "block";
+//     setTimeout(carousel, 2000);
+// }
+
+// dashboard script
+
+user = Dboard();
+const profileName = document.querySelector("#profileName");
+const profileSubName = document.getElementById("profileSubName");
+profileName.textContent = user.firstname;
+profileName.textContent = user.username;
+profileSubName.textContent = user.firstname;
+
+
+let imageUrl;
+function selectImage(input){
+    const profileImage = document.getElementById("profile")
+    console.log(input.files);
+
+    if (input.files && input.files[0]){
+        const reader = new FileReader();
+
+        reader.onload = function(e){
+        imageUrl = e.target.result.split(`,`)[1]
+        profileImage.src = e.target.result;
+        };
+        reader.readAsDataURL(input.files[0])
+    }
+}
+
+const update = () => {
+    console.log(imageUrl);
+}
+</script>
+</html>
